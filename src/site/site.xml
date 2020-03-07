@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <body>
+    <menu name="Overview">
+      <item href="index.html" name="Introduction"/>
+      <item href="plugin-info.html" name="Goals"/>
+      <item href="usage.html" name="Usage"/>
+    </menu>
+  </body>
+  <custom>
+    <fluidoSkin>
+      <gitHub>
+        <projectId>mavenhaus/${project.artifactId}</projectId>
+        <ribbonColor>gray</ribbonColor>
+        <ribbonOrientation>right</ribbonOrientation>
+      </gitHub>
+    </fluidoSkin>
+  </custom>
+</project>

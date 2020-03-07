@@ -1,0 +1,21 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>core</artifactId>
+  <dependencies>
+    <dependency>
+      <artifactId>dep</artifactId>
+      <groupId>com.github.mavenhaus.starter.its</groupId>
+      <version>3.2.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>test</artifactId>
+      <groupId>com.github.mavenhaus.starter.its</groupId>
+      <scope>test</scope>
+      <version>2.0</version>
+    </dependency>
+  </dependencies>
+  <groupId>com.github.mavenhaus.starter.its</groupId>
+  <modelVersion>4.0.0</modelVersion>
+
+  <version>3.2.1</version>
+</project>

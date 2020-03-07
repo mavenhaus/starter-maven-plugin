@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- $Id$ -->
+<document>
+  <body>
+    <section name="Starter Maven Plugin">
+      <p>The Starter Maven Plugin generates a resolved version of the pom.xml that Maven installs
+        and deploys instead of the original.
+      </p>
+      <subsection name="Goals">
+        <ul>
+          <li>
+            <a href="starter-mojo.html">starter:resolve</a>
+            generates the resolved POM and sets it as file of the maven project.
+          </li>
+          <li>
+            <a href="clean-mojo.html">starter:clean</a>
+            removes any files created by <code>starter:resolve</code>.
+          </li>
+        </ul>
+      </subsection>
+      <subsection name="Usage">
+        <p>General instructions on how to use the Starter Maven Plugin can be found on the <a href="usage.html">usage page</a>.
+        </p>
+
+        <p>If you have questions regarding the plugin's usage, contact the <a href="mail-lists.html">user mailing list</a>.
+          Posts to the mailing list are archived and could already contain the answer to your question as part of an older thread.
+          Hence, it is also worth browsing/searching the <a href="mail-lists.html">mail archive</a>.
+        </p>
+
+        <p>You can fill a feature request or bug report in our
+          <a href="issue-tracking.html">issue tracker</a>. When creating a new issue, please provide a comprehensive description of your
+          concern. Especially for fixing bugs it is crucial that the developers can reproduce your problem.
+          Entire debug logs, POMs and most preferably little demo projects attached to the issue are very much appreciated.
+          Of course, patches are welcome too. Contributors can check out the project from our
+          <a href="source-repository.html">source repository</a>
+          and will find supplementary information in the
+          <a href="http://maven.apache.org/guides/development/guide-helping.html">guide to helping with Maven</a>.
+        </p>
+
+      </subsection>
+    </section>
+  </body>
+
+  <properties>
+    <title>Starter Maven Plugin</title>
+  </properties>
+</document>

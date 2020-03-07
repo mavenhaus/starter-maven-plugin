@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!-- $Id: usage.xml 19757 2014-05-29 20:45:48Z joerg.hohwiller $ -->
+<document>
+  <properties>
+    <title>Usage</title>
+  </properties>
+
+  <body>
+    <section name="Usage">
+      Simply add the plugin to the build section of your top-level POM as following.
+      <source><![CDATA[
+  <build>
+    <plugins>
+      ...
+      <plugin>
+        <groupId>com.github.mavenhaus</groupId>
+        <artifactId>starter-maven-plugin</artifactId>
+        <!--<version>${project.version}</version>-->
+        <executions>
+          <!-- enable resolving -->
+          <execution>
+            <id>starter.resolve</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>resolve</goal>
+            </goals>
+            <configuration>
+            </configuration>
+          </execution>
+          <!-- ensure proper cleanup -->
+          <execution>
+            <id>starter.clean</id>
+            <phase>clean</phase>
+            <goals>
+              <goal>clean</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+      ]]></source>
+    </section>
+  </body>
+</document>

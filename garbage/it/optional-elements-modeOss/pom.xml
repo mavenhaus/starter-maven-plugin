@@ -1,0 +1,117 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <!-- required -->
+  <artifactId>optional-elements-modeOss</artifactId>
+  <build>
+    <defaultGoal>verify</defaultGoal>
+    <plugins>
+      <plugin>
+        <artifactId>starter-maven-plugin</artifactId>
+        <configuration>
+          <resolveMode>oss</resolveMode>
+        </configuration>
+        <groupId>com.github.mavenhaus</groupId>
+      </plugin>
+    </plugins>
+  </build>
+  <ciManagement>
+    <url>http://localhost</url>
+  </ciManagement>
+  <contributors>
+    <contributor>
+      <name>Robert Scholte</name>
+    </contributor>
+  </contributors>
+
+  <!-- banned -->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <artifactId>dep</artifactId>
+        <groupId>com.github.mavenhaus.starter.its</groupId>
+        <version>1.1</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <description>This project contains only required ignorable elements</description>
+
+  <developers>
+    <developer>
+      <id>hohwille</id>
+      <name>J&#246;rg Hohwiller</name>
+    </developer>
+  </developers>
+
+  <distributionManagement>
+    <downloadUrl>http://mojo.codehaus.org/downloads</downloadUrl>
+  </distributionManagement>
+
+  <groupId>com.github.mavenhaus.starter.its</groupId>
+
+  <inceptionYear>2014</inceptionYear>
+
+  <issueManagement>
+    <system>jira</system>
+    <url>http://jira.codehaus.org/browse/MOJO</url>
+  </issueManagement>
+
+  <mailingLists>
+    <mailingList>
+      <name>announce</name>
+    </mailingList>
+  </mailingLists>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <organization>
+    <name>Codehaus</name>
+  </organization>
+
+  <!-- This can only be checked when packaging is pom <modules> <module>module</module> 
+    </modules> -->
+
+  <parent>
+    <artifactId>parent-depMngt</artifactId>
+    <groupId>com.github.mavenhaus.starter.its</groupId>
+    <version>2</version>
+  </parent>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>none</id>
+      <url>@repository.proxy.url@</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <prerequisites>
+    <maven>3.0</maven>
+  </prerequisites>
+
+  <properties>
+    <key>value</key>
+  </properties>
+
+  <!-- this one is only required for maven-plugin packaging type -->
+  <reporting>
+    <outputDirectory>target/site</outputDirectory>
+  </reporting>
+
+  <reports/>
+
+  <repositories>
+    <repository>
+      <id>no-one</id>
+      <url>@repository.proxy.url@</url>
+    </repository>
+  </repositories>
+
+  <scm>
+    <url>http://svn.codehaus.org/mojo</url>
+  </scm>
+
+  <url>http://mojo.codehaus.org</url>
+
+  <version>0.0.1-SNAPSHOT</version>
+
+</project>
