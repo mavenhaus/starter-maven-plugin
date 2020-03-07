@@ -43,16 +43,6 @@
     <maven>${mavenVersion}</maven>
   </prerequisites>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.apache.maven.scm</groupId>
-        <artifactId>maven-scm-provider-gitexe</artifactId>
-        <version>1.11.2</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
   <dependencies>
     <dependency>
       <groupId>org.apache.maven</groupId>
@@ -227,7 +217,7 @@
           <pushChanges>false</pushChanges>
           <mavenExecutorId>forked-path</mavenExecutorId>
           <releaseProfiles>release-sign-artifacts</releaseProfiles>
-          <arguments>-Prelease-sign-artifacts -Dgpg.passphrase=${gpg.passphrase} -Dgpg.keyname=8A12BB4603FBDF66C068C70FE97BC8A6EFCBB5C0</arguments>
+          <arguments>-Prelease-sign-artifacts -Dgpg.passphrase=${gpg.passphrase} -Dgpg.keyname=${gpg.keyname}</arguments>
         </configuration>
         <dependencies>
           <dependency>
