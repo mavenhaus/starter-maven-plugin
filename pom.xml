@@ -227,7 +227,7 @@
           <pushChanges>false</pushChanges>
           <mavenExecutorId>forked-path</mavenExecutorId>
           <releaseProfiles>release-sign-artifacts</releaseProfiles>
-          <arguments>-Prelease-sign-artifacts -Dgpg.passphrase=${gpg.passphrase}</arguments>
+          <arguments>-Prelease-sign-artifacts -Dgpg.passphrase=${gpg.passphrase} -Dgpg.keyname=8A12BB4603FBDF66C068C70FE97BC8A6EFCBB5C0</arguments>
         </configuration>
         <dependencies>
           <dependency>
