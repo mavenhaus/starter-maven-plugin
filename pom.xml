@@ -407,7 +407,7 @@
 
   <ciManagement>
     <system>travis</system>
-    <url>https://travis-ci.org/mavenhaus/starter-maven-plugin</url>
+    <url>https://travis-ci.com/mavenhaus/starter-maven-plugin</url>
   </ciManagement>
 
   <distributionManagement>
