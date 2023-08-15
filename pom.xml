@@ -34,7 +34,7 @@
   <description>Plugin to generate a starter POM and to use (install, sign, deploy) it instead of original pom.xml.</description>
 
   <properties>
-    <mavenVersion>3.2.5</mavenVersion>
+    <mavenVersion>3.8.1</mavenVersion>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
